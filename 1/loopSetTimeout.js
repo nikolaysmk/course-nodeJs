@@ -11,7 +11,9 @@ const server = http.createServer((req, res) => {
       mainModule(req, res);
       break;
     case '/calc':
-      calc(req, res);
+      setTimeout(() => {
+        calc(req, res);
+      }, 0);
       break;
     default:
       res.writeHead(200);
@@ -21,24 +23,23 @@ const server = http.createServer((req, res) => {
 
 server.listen(4000, () => console.log('Server is running on port 4000', pid));
 
-
-
 function calc(req, res) {
   res.writeHead(200);
-  let count = 0;
+  let countL = 0;
   for (let i = 0; i < 100000000; i++) {
-    count += 1;
+    countL += 1;
   }
-  summ += count / 10000000000;
+  summ += countL;
+
   console.log('calc', summ);
-  res.end('calc: ' + summ);
+  res.end('calc: ' + summ + '   ' + 'count: ' + countMain);
 }
 
 function mainModule(req, res) {
   res.writeHead(200);
   countMain += 1;
-  console.log('mainModule Comment: ' + countMain, summ);
-  res.end('mainModule response: ' + countMain + ' and summ:  ' + summ);
+  console.log('countMain Comment: ' + countMain, 'summ: ' + summ);
+  res.end('countMain response: ' + countMain + '  summ:' + summ + '   ');
 }
 
 // autocannon -c 100 localhost:4000
