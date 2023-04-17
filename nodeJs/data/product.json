@@ -1,0 +1,38 @@
+
+[{
+    "title":"Product 1",
+    "price": 10000,
+    "description":"Product 1 description",
+    "category":"Product",
+    "image":"https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+}, 
+{
+    "title":"Product 2",
+    "price": 10000,
+    "description":"Product 2 description",
+    "category":"Product",
+    "image":"https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+},
+{
+    "title":"Product 3",
+    "price": 10000,
+    "description":"Product 3 description",
+    "category":"Product",
+    "image":"https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+},
+{
+    "title":"Product 4",
+    "price": 10000,
+    "description":"Product 4 description",
+    "category":"Product",
+    "image":"https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+},
+{
+    "title":"Product 5",
+    "price": 10000,
+    "description":"Product 5 description",
+    "category":"Product",
+    "image":"https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+
+
+}]
